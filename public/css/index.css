@@ -2,9 +2,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-image: url(/public/assets/fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
 }
 
 li, a, button{
+    background: none;
     font-family: Helvetica;
     font-weight: 500;
     font-size: 16px;
@@ -18,17 +23,19 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    position: absolute;
+    position: relative;
     width: 100%;
 
 }
 
 .imageNavBar{
+    background: none;
     animation-name: animacaoLinks;
     animation-duration: 1s;
     height: 90px;
     width: 130px;
     cursor: pointer;
+    position: fixed;
 }
 
 .imageNavBar:hover{
@@ -50,7 +57,12 @@ header{
     100% {opacity: 1;}
 }
 
+nav, i, .letras, span, .letras h2, .letras p{
+    background: none;
+}
+
 .links{
+    background: none;
     margin-top: 15px;
     list-style: none;
     animation-name: animacaoLinks;
@@ -97,7 +109,7 @@ header{
 .iconUser{
     animation-name: animacaoLinks;
     animation-duration: 1s;
-    margin-left: -65px;
+    margin-left: -5%;
     transform:scale(1) ;
     margin-top: 0.5%;
 }
@@ -105,11 +117,6 @@ header{
 .iconUser:hover{
     transform: scale(2);
     color: #8e24f8;
-}
-
-.fundoRpg{
-    width: 100%;
-    height: 790px
 }
 
 @keyframes animacaoLetras{
@@ -129,7 +136,6 @@ header{
 }
 
 .letras{
-    margin-top: -49%;
     text-align: right;
     margin-right: 5%;
     font-size: 300;
