@@ -90,7 +90,7 @@ nav, i, .letras, span, .letras h2, .letras p{
     transition: all 0.3s ease 0s;
     font-weight: bold;
     color: white;
-    margin-left: 70px;
+    margin-left: 170%;
 }
 
 .buttonNav:hover{
@@ -101,7 +101,6 @@ nav, i, .letras, span, .letras h2, .letras p{
 .iconUser{
     animation-name: animacaoLinks;
     animation-duration: 1s;
-    margin-left: -5%;
     transform:scale(1) ;
     margin-top: 0.5%;
 }
@@ -128,9 +127,10 @@ nav, i, .letras, span, .letras h2, .letras p{
 }
 
 .letras{
+    background: none;
     text-align: right;
     margin-right: 5%;
-    font-size: 300;
+    font-size: 30px;
 }
 
 span{
@@ -141,7 +141,7 @@ span{
     animation-name: animacaoLetras;
     animation-duration: 0.5s;
     text-transform: uppercase;
-    font-size: 80px;
+    font-size: 100px;
     color: white;
 }
 
@@ -162,9 +162,41 @@ span{
     border: #8e24f8 4px solid;
     border-radius: 35px;
     background-color: transparent;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .criarPersonagem:hover{
     transform: scale(1.1);
+}
+
+@media (min-width:1101px) and (max-width: 1600px) {
+   .letras{
+        font-size: 20px;
+   }
+
+   .buttonNav{
+        margin-left: 50%;
+   }
+}
+
+@media (min-width: 500px) and (max-width: 1100px) {
+    .letras h2{
+        font-size: 70px;
+    }
+
+    .letras p{
+        font-size: 20px;
+    }
+    
+    .criarPersonagem{
+        font-size: 25px;
+    }
+
+    .buttonNav{
+        margin-left: 20%;
+    }
+
+    .imageNavBar{
+        margin-left: -5%;
+    }
 }

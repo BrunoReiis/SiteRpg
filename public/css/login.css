@@ -1,10 +1,6 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
-li, a, .buttonNav{
+li, a, button{
+    background: none;
     font-family: Helvetica;
     font-weight: 500;
     font-size: 16px;
@@ -18,24 +14,51 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    position: absolute;
+    position: relative;
     width: 100%;
 
 }
 
 .imageNavBar{
+    margin-top: -2%;
+    background: none;
+    animation-name: animacaoLinks;
+    animation-duration: 1s;
     height: 90px;
     width: 130px;
     cursor: pointer;
+    position: fixed;
 }
 
 .imageNavBar:hover{
     transform: scale(1.1);
 }
 
+@keyframes animacaoLinks{
+    0% {opacity: 0; overflow: hidden;}
+    5% {opacity: 0.1; margin-top: 50px;}
+    15% {opacity: 0.2; margin-top: 45px;}
+    25% {opacity: 0.3; margin-top: 40px;}
+    35% {opacity: 0.4; margin-top: 35px;}
+    45% {opacity: 0.5; margin-top: 30px;}
+    55% {opacity: 0.6; margin-top: 25px;}
+    65% {opacity: 0.7; margin-top: 20px;}
+    75% {opacity: 0.8; margin-top: 15px;}
+    85% {opacity: 0.9; margin-top: 10px;}
+    95% {opacity: 1; margin-top: 5px;}
+    100% {opacity: 1;}
+}
+
+nav, i, .letras, span, .letras h2, .letras p{
+    background: none;
+}
+
 .links{
-    margin-top: 15px;
+    background: none;
+    margin-top: 5%;
     list-style: none;
+    animation-name: animacaoLinks;
+    animation-duration: 1s;
 }
 
 .links li{
@@ -57,6 +80,8 @@ header{
 }
 
 .buttonNav{
+    animation-name: animacaoLinks;
+    animation-duration: 1s;
     padding: 9px 25px;
     background-color: #8e24f8;
     border: none;
@@ -65,7 +90,7 @@ header{
     transition: all 0.3s ease 0s;
     font-weight: bold;
     color: white;
-    margin-left: 70px;
+    margin-left: 170%;
 }
 
 .buttonNav:hover{
@@ -74,7 +99,9 @@ header{
 }
 
 .iconUser{
-    margin-left: -65px;
+    background: none;
+    animation-name: animacaoLinks;
+    animation-duration: 1s;
     transform:scale(1) ;
     margin-top: 0.5%;
 }
@@ -84,13 +111,8 @@ header{
     color: #8e24f8;
 }
 
-.fundoRpg{
-    width: 100%;
-    height: 790px
-}
-
 .formBox{
-    margin-top: -45%;
+    margin-top: 5%;
     margin-left: 35%;
     width: 380px;
     height: 480px;
@@ -174,3 +196,15 @@ header{
     margin-left: 22%;
     height: 80px;
 }
+
+@media (min-width:1101px) and (max-width: 1600px) {
+    .buttonNav{
+         margin-left: 50%;
+    }
+ }
+
+ @media (max-width: 1100px) {
+    .buttonNav{
+        margin-left: 20%;
+    }
+ }
