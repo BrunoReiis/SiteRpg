@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url(./public/assets/fundo.png);
+    background-image: url(../assets/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
@@ -29,6 +29,7 @@ header{
 }
 
 .imageNavBar{
+    margin-top: -2%;
     background: none;
     animation-name: animacaoLinks;
     animation-duration: 1s;
@@ -63,7 +64,7 @@ nav, i, .letras, span, .letras h2, .letras p{
 
 .links{
     background: none;
-    margin-top: 15px;
+    margin-top: 5%;
     list-style: none;
     animation-name: animacaoLinks;
     animation-duration: 1s;
