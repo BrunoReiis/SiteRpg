@@ -1,12 +1,3 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-image: url(../assets/fundo.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: transparent;
-}
 
 li, a, button{
     background: none;
