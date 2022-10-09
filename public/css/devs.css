@@ -27,7 +27,6 @@ header{
     height: 90px;
     width: 130px;
     cursor: pointer;
-    position: fixed;
 }
 
 .imageNavBar:hover{
@@ -111,104 +110,46 @@ nav, i, .letras, span, .letras h2, .letras p{
     color: #8e24f8;
 }
 
-.formBox{
+.devBoxGeneral{
     margin-top: 5%;
-    margin-left: 40%;
-    width: 380px;
-    height: 480px;
+    margin-left: 5%;
+    width: 90%;
+    height: 400px;
+    background: #8e24f8;
+    padding: 5px;
+    font-family: sans-serif;
+}
+
+.devBox{
+    width: 99%;
+    height: 390px;
     background: black;
     padding: 5px;
-    position: absolute;
     font-family: sans-serif;
-    overflow: hidden;
 }
 
-.buttonForm{
-    width: 255px;
-    margin: 35px auto;
-    position: relative;
-}
-
-.toggleBtn{
-    margin-left: 5px;
-    color: white;
-    padding: 10px 30px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-}
-
-#btn{
-    margin-left: 10px;
-    top: 0;
-    left: 0;
-    position: absolute;
-    width: 110px;
-    height: 100%;
+.devBoxGeneral2{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 400px;
     background: #8e24f8;
-    border-radius: 50px;
-    transition: 0.5;
+    padding: 5px;
+    font-family: sans-serif;
+
 }
 
-.inputGeneral{
-    top: 180px;
-    position: absolute;
-    width: 280px;
-}
-
-.input{
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border-left: 0;
-    border-top: 0;
-    border-right: 0;
-    border-bottom: 1px solid #999;
-    outline: none;
-    background: white;
-}
-
-.submitBtn{
-    color: white;
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    background: #8e24f8;
-    border: 0;
-    outline: none;
-    border-radius: 30px;
-}
-
-#login{
-    left: 50px;
-}
-
-#registro{
-    left: 450px;
-}
-
-.logo{
-    margin-top: -5%;
-    margin-left: 22%;
-    height: 80px;
+.devBox2{
+    margin-left: 1%;
+    width: 99%;
+    height: 390px;
+    background: black;
+    padding: 5px;
+    font-family: sans-serif;
 }
 
 @media (min-width:1101px) and (max-width: 1600px) {
     .buttonNav{
          margin-left: 50%;
-    }
-
-    .formBox{
-        margin-left: 35%;
-    }
- }
-
- @media (max-width: 1100px) {
-    .buttonNav{
-        margin-left: 20%;
     }
  }
