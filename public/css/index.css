@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-image: url(/public/assets/fundo.png);
+    background-image: url(./public/assets/fundo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: transparent;
