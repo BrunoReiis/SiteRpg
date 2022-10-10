@@ -110,6 +110,16 @@ nav, i, .letras, span, .letras h2, .letras p{
     color: #8e24f8;
 }
 
+.textoDev{
+    color: white;
+    margin-left: 42%;
+    margin-top: -30%;
+}
+
+.textoDev h1{
+    margin-bottom: 5%;
+}
+
 .devBoxGeneral{
     margin-top: 5%;
     margin-left: 5%;
@@ -146,6 +156,11 @@ nav, i, .letras, span, .letras h2, .letras p{
     background: black;
     padding: 5px;
     font-family: sans-serif;
+}
+
+.logoDevs{
+    width: 40%;
+    height: 100%;
 }
 
 @media (min-width:1101px) and (max-width: 1600px) {
