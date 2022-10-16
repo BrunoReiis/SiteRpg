@@ -1,119 +1,13 @@
-
-li, a, button{
-    background: none;
-    font-family: Helvetica;
-    font-weight: 500;
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-}
-
-header{
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-    position: relative;
-    width: 100%;
-
-}
-
-.imageNavBar{
-    margin-top: -2%;
-    background: none;
-    animation-name: animacaoLinks;
-    animation-duration: 1s;
-    height: 90px;
-    width: 130px;
-    cursor: pointer;
-}
-
-.imageNavBar:hover{
-    transform: scale(1.1);
-}
-
-@keyframes animacaoLinks{
-    0% {opacity: 0; overflow: hidden;}
-    5% {opacity: 0.1; margin-top: 50px;}
-    15% {opacity: 0.2; margin-top: 45px;}
-    25% {opacity: 0.3; margin-top: 40px;}
-    35% {opacity: 0.4; margin-top: 35px;}
-    45% {opacity: 0.5; margin-top: 30px;}
-    55% {opacity: 0.6; margin-top: 25px;}
-    65% {opacity: 0.7; margin-top: 20px;}
-    75% {opacity: 0.8; margin-top: 15px;}
-    85% {opacity: 0.9; margin-top: 10px;}
-    95% {opacity: 1; margin-top: 5px;}
-    100% {opacity: 1;}
-}
-
-nav, i, .letras, span, .letras h2, .letras p{
-    background: none;
-}
-
-.links{
-    background: none;
-    margin-top: 5%;
-    list-style: none;
-    animation-name: animacaoLinks;
-    animation-duration: 1s;
-}
-
-.links li{
-    display: inline-block;
-    padding: 0px 20px;
-}
-
-.links li:hover{
-    transform: scale(1.1);
-    font-weight: bold;
-}
-
-.links li a{
-    transition: all 0.3s ease 0s;
-}
-
-.links li a:hover{
-    color: #8e24f8;
-}
-
-.buttonNav{
-    animation-name: animacaoLinks;
-    animation-duration: 1s;
-    padding: 9px 25px;
-    background-color: #8e24f8;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    font-weight: bold;
-    color: white;
-    margin-left: 170%;
-}
-
-.buttonNav:hover{
-    background-color: #8e24f8;
-    transform: scale(1.1);
-}
-
-.iconUser{
-    background: none;
-    animation-name: animacaoLinks;
-    animation-duration: 1s;
-    transform:scale(1) ;
-    margin-top: 0.5%;
-}
-
-.iconUser:hover{
-    transform: scale(2);
-    color: #8e24f8;
-}
-
 .textoDev{
+    background: black;
     color: white;
     margin-left: 42%;
-    margin-top: -30%;
+    margin-top: -20%;
+    text-align: justify;
+}
+
+.textoDev h1, p{
+    background: black;
 }
 
 .textoDev h1{
@@ -131,9 +25,9 @@ nav, i, .letras, span, .letras h2, .letras p{
 }
 
 .devBox{
+    background: black;
     width: 99%;
     height: 390px;
-    background: black;
     padding: 5px;
     font-family: sans-serif;
 }
@@ -163,8 +57,39 @@ nav, i, .letras, span, .letras h2, .letras p{
     height: 100%;
 }
 
-@media (min-width:1101px) and (max-width: 1600px) {
-    .buttonNav{
-         margin-left: 50%;
+@media (min-width: 1025px) and (max-width: 1600px) 
+{
+    .textoDev{
+        margin-top: -30%;
+    }
+
+    .devBox2 h1{
+        font-size: 35px;
+    }
+ }
+
+ @media (min-width: 769px) and (max-width: 1024px)
+ { 
+   .textoDev{
+       margin-top: -43%;
+   }
+
+ }
+
+ @media (min-width: 426px) and (max-width: 768px)
+ {
+    .textoDev{
+        margin-top: -50%;
+    }
+ }
+
+ @media (max-width: 425px)
+ {
+    .textoDev{
+        margin-top: -100%;
+    }
+
+    .textoDev p{
+        font-size: 10px;
     }
  }
